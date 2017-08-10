@@ -1,7 +1,21 @@
 {
+  "entrypoint": "src/studio-aleppo-app/studio-aleppo-app.html",
+  "shell": "src/studio-aleppo-app/studio-aleppo-app.html",
+  "fragments": [
+    "src/studio-aleppo-app/studio-aleppo-app.html"
+  ],
+  "sources": [
+    "src/**/*",
+    "bower.json",
+    "index.html"
+  ],
+  "extraDependencies": [
+    "manifest.json",
+    "bower_components/webcomponentsjs/webcomponents-lite.js",
+  ],
   "lint": {
     "rules": [
-      "polymer-2-hybrid"
+      "polymer-1"
     ]
   }
 }

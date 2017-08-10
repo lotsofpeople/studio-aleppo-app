@@ -1,7 +1,7 @@
 {
-  "name": "studio-aleppo-app",
-  "short_name": "studio-aleppo-app",
-  "description": "App shell for Studio Aleppo app",
+  "name": "Studio Aleppo – Picturing (new) European Citizens",
+  "short_name": "Studio Aleppo",
+  "description": "Studio Aleppo",
   "start_url": "/",
   "display": "standalone"
 }
