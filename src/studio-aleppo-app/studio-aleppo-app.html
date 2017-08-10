@@ -1,4 +1,6 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/app-route/app-location.html">
+<link rel="import" href="../../bower_components/studio-aleppo/studio-aleppo.html">
 
 <dom-module id="studio-aleppo-app">
   <template>
@@ -7,7 +9,17 @@
         display: block;
       }
     </style>
-    <h2>Hello [[prop1]]</h2>
+
+    <app-location
+      route="{{route}}"
+      use-hash-as-path
+    ></app-location>
+
+    <studio-aleppo
+      api-endpoint="[[apiEndpoint]]"
+      route="[[route]]"
+    ></studio-aleppo>
+
   </template>
 
   <script>
@@ -16,10 +28,16 @@
       is: 'studio-aleppo-app',
 
       properties: {
-        prop1: {
+        
+        apiEndpoint: {
           type: String,
-          value: 'studio-aleppo-app',
+          value: 'https://api.studioaleppo.nl'
         },
+        
+        route: {
+          type: Object
+        }
+        
       },
 
     });
