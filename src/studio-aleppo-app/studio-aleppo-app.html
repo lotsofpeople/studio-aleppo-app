@@ -1,0 +1,27 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="studio-aleppo-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'studio-aleppo-app',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'studio-aleppo-app',
+        },
+      },
+
+    });
+  </script>
+</dom-module>

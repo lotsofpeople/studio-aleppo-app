@@ -1,0 +1,7 @@
+{
+  "name": "studio-aleppo-app",
+  "short_name": "studio-aleppo-app",
+  "description": "App shell for Studio Aleppo app",
+  "start_url": "/",
+  "display": "standalone"
+}
