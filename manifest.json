@@ -1,7 +1,21 @@
 {
-  "name": "Studio Aleppo – Picturing (new) European Citizens",
+  "name": "Studio Aleppo",
   "short_name": "Studio Aleppo",
-  "description": "Studio Aleppo",
+  "description": "Picturing (new) European Citizens",
   "start_url": "/",
-  "display": "standalone"
+  "display": "standalone",
+  "theme_color": "#10364B",
+  "background_color": "#10364B",
+  "icons": [
+    {
+      "src": "images/manifest/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/manifest/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
