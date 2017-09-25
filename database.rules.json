@@ -1,3 +1,22 @@
 {
-  "rules": {}
+  "rules": {
+    "galleries": {
+      "$galleryId": {
+        ".read": true,
+        ".write": "$galleryId === auth.uid"
+      }
+    },
+    "gallery-metadata": {
+      "$galleryId": {
+        ".read": true,
+        ".write": "$galleryId === auth.uid"
+      }
+    },      
+    "evaluated-citizens": {
+      "$userId": {
+        ".read": true,
+        ".write": "$userId === auth.uid"
+      }
+    }
+  }
 }
