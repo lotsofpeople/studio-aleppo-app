@@ -6,6 +6,10 @@
     "public": "build/default",
     "rewrites": [
       {
+        "source": "/galleries/**",
+        "function": "render"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
@@ -17,8 +21,7 @@
           {
             "key": "Access-Control-Allow-Origin",
             "value": "*"
-          }
-        ]
+          }]
       },
       {
         "source": "**/*.@(jpg|jpeg|gif|png)",
